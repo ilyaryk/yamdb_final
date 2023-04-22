@@ -5,7 +5,6 @@ from .views import (AuthSignupView, CommentViewSet, GetJWTTokenView,
                     ReviewViewSet, UsersViewSet, CategoryViewSet,
                     GenreViewSet, TitleViewSet)
 
-
 app_name = "api"
 
 router_v1 = DefaultRouter()
@@ -29,4 +28,3 @@ urlpatterns = [
     path("v1/auth/token/", GetJWTTokenView.as_view()),
     path("v1/", include(router_v1.urls)),
 ]
-
