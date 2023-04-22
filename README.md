@@ -1,6 +1,6 @@
 # yamdb_final
 yamdb_final
-![example workflow](https://github.com/ilyaryk/yamdb_final/.github/workflows/yamdb_workflow.yml/badge.svg)
+![example workflow](https://github.com/ilyaryk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 # Проект infra_sp2 
 ### Описание
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
