@@ -1,12 +1,9 @@
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
-from api.views import (
-    AuthSignupView,
-    GetJWTTokenView,
-    UsersViewSet,
-    ReviewViewSet,
-    CommentViewSet,
-)
+
+from api.views import (AuthSignupView, CommentViewSet, GetJWTTokenView,
+                       ReviewViewSet, UsersViewSet)
+
 from .views import CategoryViewSet, GenreViewSet, TitleViewSet
 
 app_name = "api"
@@ -32,3 +29,4 @@ urlpatterns = [
     path("v1/auth/token/", GetJWTTokenView.as_view()),
     path("v1/", include(router_v1.urls)),
 ]
+
